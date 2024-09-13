@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="./index.html" style="text-decoration: none;">
+        <h1 id="ecommerce">Ecommerce</h1>
+      </a>
+      <div id="navlinks">
+        <a href="./index.html">Home</a>
+        <a href="./products.html">Product</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+
+      <div id="headerbtn">
+        <a href="./login.html"><button><i class="fa-solid fa-right-to-bracket"></i> Login</button></a>
+        <a href="./register.html"><button><i class="fa-solid fa-user-plus"></i> Register</button></a>
+        <a href="./cart.html"><button><i class="fa-solid fa-cart-shopping"></i> Cart(0)</button></a>
+      </div>
+    </nav>
+  </header>
+  <div id="herosection">
+    <h1 id="title">Ecommerce Website</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ullam veniam sapiente dolores enim
+      delectus!</p>
+  </div>
+  <div id="latesthr">
+    <div id="latest">
+      <p>Latest Products</p>
+    </div>
+    <hr>
+  </div>
+  <div id="allbuttons">
+    <button id="allbtn" onclick="filterproduct('all')">All</button>
+    <button id="mensbtn" onclick="filterproduct('men\'s clothing')">Men's Clothing</button>
+    <button id="womensbtn" onclick="filterproduct('women\'s clothing')">Women's Clothing</button>
+    <button id="jewelsbtn" onclick="filterproduct('jewelery')">jewelery</button>
+    <button id="elecbtn" onclick="filterproduct('electronics')">Electronics</button>
+  </div>
+  <div id="productContainer">
+
+  </div>
+  <div id="lastquote">
+    <p>Made with ❤️ by Achievers It</p>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,517 @@
+* {
+    position: relative;
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color:rgb(241, 245, 246);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ecommerce {
+    margin-left: 40px;
+    color: black;
+}
+
+#navlinks {
+    display: flex;
+    gap: 40px;
+}
+
+#navlinks a {
+    text-decoration: none;
+}
+
+#headerbtn {
+    margin-right: 20px;
+}
+
+nav button {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid rgb(1, 5, 9);
+}
+
+nav button:hover {
+    cursor: pointer;
+    background-color: rgb(9, 11, 11);
+    color: white;
+}
+
+#herosection {
+    height: 500px;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    background-image: url(./assets/heropic.jpg);
+    margin: 0 10px;
+    text-align: center;
+}
+
+#title {
+    margin-top: 10px;
+    color: rgb(226, 97, 22);
+}
+
+#para {
+    top: 20px;
+    font-size: large;
+    color: darkgreen;
+}
+
+#latesthr hr {
+    margin: 0 160px;
+}
+
+#latest p {
+    font-size: xx-large;
+    text-align: center;
+    margin: 30px;
+}
+
+#allbuttons {
+    margin: 20px;
+    text-align: center;
+}
+
+#allbuttons button:hover {
+    background-color: black;
+    text-align: center;
+    color: azure;
+    cursor: pointer;
+}
+
+#allbtn {
+    height: 40px;
+    width: 50px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#mensbtn {
+    height: 40px;
+    width: 110px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#womensbtn {
+    height: 40px;
+    width: 130px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#jewelsbtn {
+    height: 40px;
+    width: 70px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#elecbtn {
+    height: 40px;
+    width: 90px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.product-card {
+    height: 450px;
+    width: 380px;
+    border: 1px solid rgb(127, 124, 124);
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    gap: 5px;
+}
+
+.product-card img {
+    height: 210px;
+    width: 230px;
+    margin: 10px;
+}
+
+.product-card hr {
+    margin: 0;
+    padding: 0px 10px;
+}
+
+.product-card p {
+    font-size: large;
+    margin: 10px;
+}
+
+.product-card button {
+    margin: 10px 2px;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    border: 1px solid black;
+    color: azure;
+    border-radius: 5px;
+}
+
+.product-card button:hover {
+    cursor: pointer;
+    background-color: rgb(19, 202, 208);
+    color: black;
+}
+
+/* About page starts here */
+#aboutcontent {
+    margin: 0 160px;
+    font-size: large;
+    font-stretch: expanded;
+    line-height: 150%;
+}
+
+#producttitle {
+    text-align: center;
+    margin: 40px;
+}
+
+#images {
+    display: flex;
+    justify-content: center;
+}
+
+#images div {
+    height: 250px;
+    width: 260;
+    border: 1px solid rgb(191, 186, 186);
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#images p {
+    font-size: larger;
+    margin: 10px;
+}
+
+#images img {
+    height: 200px;
+    width: 260px;
+    border-radius: 5px;
+
+}
+
+#lastquote {
+    text-align: center;
+    margin: 50px;
+}
+/* About page ends here */
+
+/* Cart page starts from here */
+
+#cartdiv{
+    margin: 10px 160px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   background-color: rgb(234, 235, 237);
+   text-align: center;
+}
+#cartpara{
+    margin-bottom: 10px;
+    font-size: xx-large;
+}
+#cartdiv button{
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#cartdiv button:hover{
+    background-color: black;
+    color: azure;
+}
+
+/* Cart page ends from here */
+
+/* Contact page starts here */
+
+#contactdetails{
+    height: 350px;
+    width: 430px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(241, 245, 246);
+    border-radius: 10px;
+    box-shadow: 5px 2px 5px 2px rgb(222, 220, 220);
+}
+#contactdetails label{
+    display: block;
+}
+#contactdetails input{
+    height: 40px;
+    width: 380px;
+    border: 1px solid rgb(237, 236, 236);
+    border-radius: 5px;
+}
+#contactdetails textarea{
+    height: 80px;
+    width: 380px;
+    border: 1px solid rgb(237, 236, 236);
+    border-radius: 5px;
+}
+#contactdetails button{
+  margin:0px 170px;
+    height: 35px;
+    width: 60px;
+    border: 1px solid;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Contact page ends here */
+
+
+/* login page starts here */
+#logindetails{
+    margin: auto;
+    margin-top: 130px;
+    height: 250px;
+    width: 300px;
+    background-color: rgb(241, 245, 246);
+    border-radius: 10px;
+    box-shadow: 5px 2px 5px 2px rgb(222, 220, 220);
+    text-align: center;
+    }
+#logindetails input{
+   margin: 5px;
+    height: 40px;
+    width: 250px;
+    border: 1px solid rgb(192, 189, 189);
+    border-radius: 5px;
+}
+#logindetails button{
+    height: 40px;
+    width: 250px;
+    border: none;
+    background-color: rgb(15, 118, 227);
+    border-radius: 5px;
+    color: white;
+}
+/* login page ends here */
+
+/* Register pages starts here */
+#registerdetails{
+    margin: auto;
+    margin-top: 100px;
+    height: 360px;
+    width: 300px;
+    background-color: rgb(241, 245, 246);
+    border-radius: 10px;
+    box-shadow: 5px 2px 5px 2px rgb(222, 220, 220);
+    text-align: center;
+    }
+    #registerdetails input{
+        margin: 5px;
+         height: 40px;
+         width: 250px;
+         border: 1px solid rgb(192, 189, 189);
+         border-radius: 5px;
+     }
+     #registerdetails button{
+        height: 40px;
+        width: 250px;
+        border: none;
+        background-color: rgb(15, 118, 227);
+        border-radius: 5px;
+        color: white;
+    }
+
+
+/* Register pages ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container layout to place the cart and summary side by side */
+#cartItemsContainer {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px; /* Add space between the cart items and summary */
+}
+
+#carteditems {
+    flex: 2; /* Takes up more space */
+}
+
+#ordereddescription {
+    flex: 1; /* Takes up less space */
+}
+
+/* Table styling */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+.cart-table th, .cart-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: #f4f4f4;
+}
+
+.product-image {
+    width: 100px;
+    height: auto;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-control span {
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Styling for the order summary */
+.order-details {
+    border: 1px solid #000;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+
+}
+
+.order-details h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.order-details table {
+    width: 100%;
+    height: 150px;
+}
+
+
+
+.order-details .spn {
+    float: right;
+}
+
+.order-details b {
+    font-size: 18px;
+}
+
+.order-details p{
+    float: right; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* checkout button */
+.checkout-btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.checkout-btn {
+    background-color:black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    height: 50px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.checkout-btn:hover {
+    background-color:black;
+}
+/* checkout button ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
