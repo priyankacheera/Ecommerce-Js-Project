@@ -163,3 +163,21 @@ document.addEventListener("DOMContentLoaded", () => {
     cartApi();  // Fetch products from API
     updateCartCount();  // Update the cart count based on localStorage
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,82 +1,3 @@
-
-// function displayCartItems() {
-//     const cartItemsContainer = document.getElementById('cartItemsContainer');
-//     cartItemsContainer.innerHTML = '';
-//     total = 0;  // Reset total to calculate dynamically
-
-//     let totalQuantity = 0;  // Initialize total quantity
-
-//     if (cartItems.length === 0) {
-//         cartItemsContainer.innerHTML =
-//         `<div id="cartdiv">
-//         <p id="cartpara">Your Cart is Empty</p>
-//         <a href="./index.html"><button><i class="fa-solid fa-arrow-left"></i> Continue Shopping</button></a>
-//        </div>`
-        
-//         return;
-//     }
-
-//     cartItems.forEach((item, index) => {
-//         const quantity = item.quantity || 1;
-//         const price = parseFloat(item.price) || 0;
-//         const subtotal = quantity * price;
-//         total += subtotal;
-//         totalQuantity += quantity;  // Add the item quantity to total quantity
-
-//         const cartItem = document.createElement('div');
-//         cartItem.className = 'cart-item';
-//         cartItem.innerHTML = `
-//             <img src="${item.image}" alt="${item.title}" style="width: 100px;">
-//             <div>
-//                 <h3>${item.title}</h3>
-//                 <p>Price: $${item.price}</p>
-//                 <p>Subtotal: $${subtotal.toFixed(2)}</p>
-//                 <button onclick="decrement(${index})">-</button>
-//                 <span id='quantity-${index}'>${quantity}</span>
-//                 <button onclick="increment(${index})">+</button>
-              
-//             </div>
-//             <hr>
-//         `;
-//         cartItemsContainer.appendChild(cartItem);  // Append to cartItemsContainer
-//     });
-
-//     // Update order summary with correct product count based on totalQuantity
-//     const orderDetails = document.createElement('div');
-//     orderDetails.classList.add('order-details');
-//     orderDetails.innerHTML = `
-//         <h2>Order Summary</h2>
-//         <table>
-//             <tr><td>Products (${totalQuantity}) <span class="spn">$${total.toFixed(2)}</span></td></tr>
-//             <tr><td>Total Amount <b><span class="spn">$${total.toFixed(2)}</span></b></td></tr>
-//         </table>
-//     `;
-//     cartItemsContainer.appendChild(orderDetails);
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 let total = 0;
 
@@ -102,7 +23,7 @@ function displayCartItems() {
     }
 
     const table = document.createElement('table');
-    table.classList.add('cart-table');
+    table.classList.add('cart-table');//adding the css class to table:<table class='cart-table'></table>
 
     // Table header
     const tableHeader = `
@@ -116,7 +37,8 @@ function displayCartItems() {
     table.innerHTML = tableHeader;
 
     cartItems.forEach((item, index) => {
-        const quantity = item.quantity || 1;
+        // const quantity = item.quantity || 1;
+        const quantity = item.quantity ;
         const price = parseFloat(item.price) || 0;
         const subtotal = quantity * price;
         total += subtotal;
@@ -157,9 +79,7 @@ function displayOrderSummary() {
             <tr><td>Shipping <p>$30</p></td></tr>
             <tr><td>Total Amount <b><span class="spn">$${(total + 30).toFixed(2)}</span></b></td></tr>
         </table>
-        <div class="checkout-btn-container">
-            <button id="checkoutButton" class="checkout-btn">Go to Checkout</button>
-        </div>
+       
     `;
     orderedDescription.appendChild(orderDetails);
 }

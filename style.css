@@ -350,22 +350,6 @@ nav button:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Container layout to place the cart and summary side by side */
 #cartItemsContainer {
     
@@ -452,16 +436,6 @@ nav button:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* checkout button */
 .checkout-btn-container {
     text-align: center;
@@ -491,6 +465,443 @@ nav button:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+/* For mobile phones (480px - 767px) */
+@media only screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #navlinks {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 10px;
+    }
+    
+    #ecommerce {
+        margin-left: 10px;
+    }
+    
+    #headerbtn {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    
+    #herosection {
+        height: 300px;
+        margin: 0;
+        background-size: cover;
+    }
+    
+    .product-card {
+        width: 250px;
+        height: 400px;
+    }
+    
+    .product-card img {
+        height: 150px;
+        width: 180px;
+    }
+    
+    #latesthr hr {
+        margin: 0 50px;
+    }
+}
+
+/* For small mobile devices (max-width: 479px) */
+@media only screen and (max-width: 479px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #navlinks {
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 5px;
+    }
+    
+    #ecommerce {
+        margin-left: 5px;
+    }
+    
+    #headerbtn {
+        margin-right: 0;
+        margin-left: 5px;
+    }
+    
+    #herosection {
+        height: 200px;
+        background-size: cover;
+        margin: 0;
+    }
+    
+    .product-card {
+        width: 200px;
+        height: 470px;
+    }
+    
+    .product-card img {
+        height: 120px;
+        width: 150px;
+    }
+    
+    #latesthr hr {
+        margin: 0 20px;
+    }
+}
+
+
+/* For mobile phones (480px - 767px) */
+@media only screen and (max-width: 767px) {
+    #aboutcontent {
+        margin: 0 40px;
+        font-size: medium;
+    }
+
+    #producttitle {
+        margin: 10px;
+    }
+
+    #images {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #images div {
+        height: 200px;
+        width: 180px;
+    }
+
+    #images img {
+        height: 160px;
+        width: 180px;
+    }
+
+    #lastquote {
+        margin: 30px;
+    }
+}
+
+/* For small mobile devices (max-width: 479px) */
+@media only screen and (max-width: 479px) {
+    #aboutcontent {
+        margin: 0 20px;
+        font-size: small;
+    }
+
+    #producttitle {
+        margin: 15px;
+    }
+
+    #images {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #images div {
+        height: 180px;
+        width: 150px;
+    }
+
+    #images img {
+        height: 130px;
+        width: 150px;
+    }
+
+    #lastquote {
+        margin: 20px;
+    }
+}
+
+/* For devices with a max-width of 479px */
+@media (max-width: 479px) {
+    #cartdiv {
+        margin: 10px 15px;
+        height: auto;
+        padding: 20px;
+    }
+    #cartpara {
+        font-size: large;
+    }
+    #cartdiv button {
+        height: 35px;
+        width: 120px;
+        font-size: medium;
+    }
+}
+/* For devices with a width between 480px and 767px */
+@media (min-width: 480px) and (max-width: 767px) {
+    #cartdiv {
+        margin: 10px 40px;
+        height: auto;
+        padding: 20px;
+    }
+    #cartpara {
+        font-size: x-large;
+    }
+    #cartdiv button {
+        height: 38px;
+        width: 130px;
+        font-size: medium;
+    }
+}
+/* For devices with a max-width of 479px */
+@media (max-width: 479px) {
+    #contactdetails {
+        height: auto;
+        width: 90%;
+        padding: 15px;
+        margin: 10px auto;
+        box-shadow: 3px 1px 3px 1px rgb(222, 220, 220);
+    }
+    #contactdetails input,
+    #contactdetails textarea {
+        width: 100%;
+    }
+    #contactdetails button {
+        margin: 20px auto;
+        height: 35px;
+        width: 80px;
+        display: block;
+    }
+}
+/* For devices with a width between 480px and 767px */
+@media (min-width: 480px) and (max-width: 767px) {
+    #contactdetails {
+        height: auto;
+        width: 90%;
+        padding: 20px;
+        margin: 20px auto;
+        box-shadow: 4px 2px 4px 2px rgb(222, 220, 220);
+    }
+    #contactdetails input,
+    #contactdetails textarea {
+        width: 100%;
+    }
+    #contactdetails button {
+        margin: 20px auto;
+        height: 35px;
+        width: 80px;
+        display: block;
+    }
+}
+/* For devices with a width between 480px and 767px */
+@media (min-width: 480px) and (max-width: 767px) {
+    #contactdetails {
+        height: auto;
+        width: 90%;
+        padding: 20px;
+        margin: 20px auto;
+        box-shadow: 4px 2px 4px 2px rgb(222, 220, 220);
+    }
+    #contactdetails input,
+    #contactdetails textarea {
+        width: 100%;
+    }
+    #contactdetails button {
+        margin: 20px auto;
+        height: 35px;
+        width: 80px;
+        display: block;
+    }
+}
+/* For devices with a width between 480px and 767px */
+@media (min-width: 480px) and (max-width: 767px) {
+    #contactdetails {
+        height: auto;
+        width: 90%;
+        padding: 20px;
+        margin: 20px auto;
+        box-shadow: 4px 2px 4px 2px rgb(222, 220, 220);
+    }
+    #contactdetails input,
+    #contactdetails textarea {
+        width: 100%;
+    }
+    #contactdetails button {
+        margin: 20px auto;
+        height: 35px;
+        width: 80px;
+        display: block;
+    }
+}
+/* For devices with a width between 480px and 767px */
+@media (min-width: 480px) and (max-width: 767px) {
+    #contactdetails {
+        height: auto;
+        width: 90%;
+        padding: 20px;
+        margin: 20px auto;
+        box-shadow: 4px 2px 4px 2px rgb(222, 220, 220);
+    }
+    #contactdetails input,
+    #contactdetails textarea {
+        width: 100%;
+    }
+    #contactdetails button {
+        margin: 20px auto;
+        height: 35px;
+        width: 80px;
+        display: block;
+    }
+}
+
+
+/* For devices with a width between 480px and 767px */
+@media (min-width: 480px) and (max-width: 767px) {
+    #logindetails {
+        margin-top: 100px;
+        height: auto;
+        width: 90%;
+        padding: 20px;
+        box-shadow: 4px 2px 4px 2px rgb(222, 220, 220);
+    }
+    #logindetails input {
+        width: 100%;
+        height: 45px;
+    }
+    #logindetails button {
+        width: 100%;
+        height: 45px;
+    }
+}
+/* For devices with a minimum width of 479px */
+@media (min-width: 479px) {
+    #logindetails {
+        margin-top: 120px;
+        height: auto;
+        width: 350px;
+        padding: 20px;
+        box-shadow: 5px 3px 5px 3px rgb(222, 220, 220);
+    }
+    #logindetails input {
+        width: 300px;
+        height: 45px;
+    }
+    #logindetails button {
+        width: 300px;
+        height: 45px;
+    }
+}
+/* For devices with a minimum width of 479px */
+@media (min-width: 479px) {
+    #cartItemsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+        gap: 30px; /* Increase gap for larger screens */
+    }
+
+    #carteditems {
+        flex: 2; /* Takes up more space for cart items */
+    }
+ 
+    /* #ordereddescription {
+        flex: 1; 
+    }  */
+
+    /* Adjust the width of the cart-table */
+    .cart-table {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .cart-table th, .cart-table td {
+        padding: 12px; /* Slightly larger padding for bigger screens */
+        text-align: left;
+    }
+
+    .product-image {
+        width: 120px; /* Increase product image size */
+        height: auto;
+    }
+
+    .quantity-control span {
+        font-size: 20px; /* Slightly larger font for better readability */
+    }
+
+    /* Order summary section adjustments */
+    .order-details {
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .order-details h2 {
+        font-size: 26px;
+    }
+
+    .checkout-btn {
+        font-size: 18px;
+        height: 55px;
+        width: 370px; /* Increase button size for larger screens */
+    }
+}
+/* For devices with a width between 480px and 767px */
+@media (min-width: 480px) and (max-width: 767px) {
+    #cartItemsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+        gap: 30px; /* Increase gap for better spacing on medium screens */
+    }
+
+    #carteditems {
+        flex: 2; /* Takes up more space */
+    }
+
+    /* #ordereddescription {
+        flex: 1; 
+    } */
+
+    /* Adjust the width of the cart-table */
+    .cart-table {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .cart-table th, .cart-table td {
+        padding: 12px; /* Increase padding for better readability */
+        text-align: left;
+    }
+
+    .product-image {
+        width: 120px; /* Increase product image size for medium screens */
+        height: auto;
+    }
+
+    .quantity-control span {
+        font-size: 20px; /* Increase font size for better usability */
+    }
+
+    /* Order summary section adjustments */
+    .order-details {
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .order-details h2 {
+        font-size: 26px;
+    }
+
+    .checkout-btn {
+        font-size: 18px;
+        height: 55px;
+        width: 370px; /* Increase button size for better interaction */
+    }
+}
 
 
 
