@@ -117,7 +117,9 @@ function displayProducts(products) {
             <p>${product.description.substring(0, 100)}...</p><hr>
             <p>Price: $${product.price}</p><hr>
             <button onclick="addToCart(${product.id})">Add to Cart</button>
-            <button onclick="Details(${product.id})">Details</button>
+         
+            <button onclick="showDetails(${product.id})">Details</button>
+
         `;
         productContainer.appendChild(productCard);
     });
@@ -158,6 +160,16 @@ function filterproduct(category) {
     }
 }
 
+
+// Function to show product details
+function showDetails(productId) {
+    // Store the product ID in localStorage
+    localStorage.setItem('selectedProductId', productId);
+    // Navigate to the details page
+    window.location.href = './details.html';
+}
+
+
 // Event listener for DOMContentLoaded to fetch products when the page loads
 document.addEventListener("DOMContentLoaded", () => {
     cartApi();  // Fetch products from API
@@ -170,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
+{/* <button onclick="Details(${product.id})">Details</button> */}
 
 
 

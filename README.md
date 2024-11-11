@@ -13,4 +13,4 @@ Fetching Products and Displaying Them
 Adding Products to the Cart
 Displaying Cart Items
 Managing Quantities and Total
-Improvement Suggestions
+
